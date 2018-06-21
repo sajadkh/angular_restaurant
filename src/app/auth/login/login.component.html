@@ -1,3 +1,5 @@
-<p>
-  login works!
-</p>
+<div>
+  <input #name type="text" name="name" placeholder="name">
+  <input #password type="password" name="password" placeholder="password">
+  <button type="submit" (click)="login(name.value, password.value)">Login</button>
+</div>
